@@ -1,6 +1,8 @@
 
 .footer {
     background-color: $bgColor;
+    max-width: 1200px;
+    margin: 0 auto;
     &__container {
        
         display: flex;
