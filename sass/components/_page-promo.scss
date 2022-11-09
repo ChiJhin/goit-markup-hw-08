@@ -1,6 +1,40 @@
+
 .promo {
     @media screen and (max-width:767px) {
         display: none;
         
+    }
+    padding-top: 0;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__thumb {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+    
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+    &__label {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+    
+        color: $simpleColor;
     }
 }

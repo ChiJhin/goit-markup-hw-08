@@ -1,0 +1,89 @@
+.social {
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    } 
+
+    &__link {
+        transition: background-color $time $speed;
+        display: flex;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background-color: $accentColor;
+
+             .social__icon--team,
+             .social__icon--team {
+                fill: $simpleColor;
+            }
+        }
+
+        &--footer {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &__icon {
+        fill: $labelColor;
+
+        &--team {
+            transition: fill $time $speed;
+            fill:$iconColor;
+        }
+        &--footer {
+            fill: $simpleColor ;
+        }
+        &--btn {
+            margin-left: 12px;
+        }
+    }
+
+    &__subtitle {
+        color: $simpleColor;
+        margin-top: 0;
+        margin-bottom: 20px;
+        @media screen and (max-width:1199px) {
+            text-align: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        @media screen and (max-width:1199px) {
+            gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    }
+
+    &__email {
+        @media screen and (max-width:1199px) {
+            max-width: 450px;
+            
+        }
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+        margin-right: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: transparent;
+        
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        padding: 10px 28px;
+    }
+}

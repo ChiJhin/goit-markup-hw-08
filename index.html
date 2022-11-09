@@ -19,51 +19,98 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header section">
+    <header class="header">
       <div class="container header__container">
         <a href="" class="logo logo--header"
-          ><span class="logo logo__header">Web</span>Studio</a
+          ><span class="logo__accent">Web</span>Studio</a
         >
-        <div class="header__list">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link link nav__link--current"
-                  >Студія</a
+        <div class="menu">
+          <button
+            class="menu__button burger js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu "
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобідьного меню">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu__container js-menu-container" id="mobile-menu">
+            <button
+              class="menu__button cross js-close-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Перемикач мобідьного меню"
+              >
+                <use href="./images/symbol-defs.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a
+                    href="./index.html"
+                    class="nav__link link nav__link--current"
+                    >Студія</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="./portfolio.html" class="nav__link link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu__link link menu__link--current"
+                >
+                  <svg class="menu__icon" width="16" height="12">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
               </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
-              </li>
-              <li class="nav__item">
-                <a href="" class="nav__link link">Контакти</a>
+              <li class="menu__item">
+                <a href="tel:+380961111111" class="menu__link link">
+                  <svg class="menu__icon" width="10" height="16">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="mailto:info@devstudio.com" class="header__link link">
-                <svg class="header__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="header__item">
-              <a href="tel:+380961111111" class="header__link link">
-                <svg class="header__icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+            <div class="soc">
+              <ul class="soc__list">
+                <li>
+                  <a href="" class="soc__link">Instagram</a>
+                </li>
+                <li>
+                  <a href="" class="soc__link">Twitter</a>
+                </li>
+                <li>
+                  <a href="" class="soc__link">Facebook</a>
+                </li>
+                <li>
+                  <a href="" class="soc__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="hero section">
+      <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn btn" data-modal-open>
@@ -75,7 +122,7 @@
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
-          <ul class="features__list">
+          <ul class="features__list list">
             <li class="features__item">
               <div class="features__thumb">
                 <svg class="features__icon" width="70" height="70">
@@ -133,7 +180,6 @@
           <ul class="promo__list">
             <li class="promo__item">
               <img
-                class="picture"
                 src="./images/img1.jpg"
                 alt="Чоловік набирає текст на клавіатурі"
               />
@@ -143,7 +189,6 @@
             </li>
             <li class="promo__item">
               <img
-                class="picture"
                 src="./images/img2.jpg"
                 alt="Жінка порівнює телефон у руках та на моніторі комп'ютера"
               />
@@ -153,7 +198,6 @@
             </li>
             <li class="promo__item">
               <img
-                class="picture"
                 src="./images/img3.jpg"
                 alt="Дівчина тримає планшет із різнокольоровим зображенням"
               />
@@ -168,10 +212,9 @@
       <section class="team section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="list social">
+          <ul class="list team__list social">
             <li class="team__item">
               <img
-                class="picture"
                 src="./images/person1.jpg"
                 alt="Чоловік в окулярах та з бородою"
               />
@@ -234,7 +277,6 @@
             </li>
             <li class="team__item">
               <img
-                class="picture"
                 src="./images/person2.jpg"
                 alt="Чоловік в окулярах та з бородою"
               />
@@ -297,7 +339,6 @@
             </li>
             <li class="team__item">
               <img
-                class="picture"
                 src="./images/person3.jpg"
                 alt="Чоловік в окулярах та з бородою"
               />
@@ -360,7 +401,6 @@
             </li>
             <li class="team__item">
               <img
-                class="picture"
                 src="./images/person4.jpg"
                 alt="Чоловік в окулярах та з бородою"
               />
@@ -477,9 +517,9 @@
 
     <footer class="footer section">
       <div class="container footer__container">
-        <div>
-          <a href="" class="logo logo__footer"
-            ><span class="logo logo--footer">Web</span>Studio</a
+        <div class="footer__contacts">
+          <a href="" class="logo logo--footer"
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="address">
             <ul class="address__list">
@@ -505,33 +545,49 @@
             </ul>
           </address>
         </div>
-        <div class="social">
+        <div class="social footer__contacts">
           <p class="social__subtitle subtitle">приєднуйтесь</p>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--footer" href="">
-                <svg class="social__icon" width="20" height="20">
+                <svg
+                  class="social__icon social__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--footer" href="">
-                <svg class="social__icon" width="20" height="20">
+                <svg
+                  class="social__icon social__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--footer" href="">
-                <svg class="social__icon" width="20" height="20">
+                <svg
+                  class="social__icon social__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--footer" href="">
-                <svg class="social__icon" width="20" height="20">
+                <svg
+                  class="social__icon social__icon--footer"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -551,7 +607,7 @@
             <button type="submit" class="btn social__btn">
               Підписатися
               <svg
-                class="social__icon social__icon--footer"
+                class="social__icon social__icon--footer social__icon--btn"
                 width="24"
                 height="24"
               >
@@ -618,7 +674,7 @@
             <input class="checkbox" type="checkbox" name="checkbox" />
             <span class="custom-checkbox"></span>
 
-            Погоджуюся з розсилкою та приймаю&nbsp;&nbsp;
+            Погоджуюся з розсилкою та приймаю&nbsp;
             <a href="" class="checkbox-label">Умови договору</a>
           </label>
 
@@ -627,5 +683,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,41 @@
+.clients {
+
+    
+    &__list {
+        justify-content: center;
+        
+    }
+
+    &__link {
+        @media screen and (max-width:1199px) {
+            width: 210px;
+        }
+        transition: border-color $time $speed;
+        width: 170px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $iconColor;
+        border-radius: 4px;
+        cursor: pointer;
+
+        
+
+        &:hover,
+        &:focus {
+        
+            border-color: $accentColor;
+
+            .clients__icon,
+            .clients__icon {
+                fill: $accentColor;
+            }
+        }
+    }
+    
+    &__icon {
+        transition: fill $time $speed;
+        fill: $iconColor;
+    }
+}

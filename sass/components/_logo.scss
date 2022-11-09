@@ -4,14 +4,20 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-
+    
     &--header {
-        margin-right: 93px;
     }
-    &__footer {
-        color: $simpleColor;
-    }
+    
     &--footer {
+        display: block;
+        color: $simpleColor;
+        margin-bottom: 20px;
+        @media screen and (max-width:1199px) {
+            text-align: center;
+        }
+        
+    }
+    &__accent {
         color: $accentColor;
     }
 }

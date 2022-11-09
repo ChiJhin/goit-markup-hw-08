@@ -1,0 +1,51 @@
+
+.footer {
+    background-color: $bgColor;
+    &__container {
+       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+
+        @media screen and (min-width:400px) and (max-width:767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media screen and (min-width:1200px) {
+            justify-content: space-between;
+        }
+    }
+    &__contacts {
+        margin-bottom: 60px;
+        flex-grow: 2;
+    }
+   
+
+    
+}
+.address{
+    
+
+    &__list {
+        @media screen and (max-width:1199px) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__link {
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+
+        &--map {
+            color: $simpleColor;
+        }
+    }
+    &__item {
+        color: $labelColor;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}

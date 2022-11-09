@@ -1,0 +1,38 @@
+.team {
+    background-color: #F5F4FA;
+    &__list {
+        
+    }
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        text-align: center;
+        line-height: 1.2;
+        font-size: 16px;
+        background-color: $simpleColor;
+        @media screen and (max-width:767px) {
+            max-width: 450px;
+        }
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 10px;
+    }
+    &__staff {
+        color: $labelColor;
+        margin-bottom: 16px;
+    }
+    &__thumb {
+        border-radius: 0px 0px 4px 4px;
+        padding:30px;
+    }
+}
