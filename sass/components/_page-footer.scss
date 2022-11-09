@@ -20,6 +20,11 @@
         margin-bottom: 60px;
         flex-grow: 2;
     }
+    &__form {
+        @media screen and (max-width:1199px) {
+            width: 100%;
+        }
+    }
    
 
     
