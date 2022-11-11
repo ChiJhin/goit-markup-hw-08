@@ -4,6 +4,8 @@
 
 @import "./utils/base";
 
+@import "./utils/mixin";
+
 @import "./components/logo";
 
 @import "./components/link";
@@ -29,8 +31,5 @@
 @import "./components/page-footer";
 
 @import "./components/page-portfolio";
-
-
-
 
 @import "./components/modal-window";

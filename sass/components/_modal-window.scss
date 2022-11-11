@@ -37,8 +37,15 @@
         transform: translate(-50%, -50%);
         width: 450px;
     }
+
+    @media (min-width:768px) {
+        
+        top:40vw;
+    }
+
     @media (min-width:1200px) {
         width: 528px;
+        top:50%;
     }
 
     &__close-button {
