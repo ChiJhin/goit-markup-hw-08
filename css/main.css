@@ -61,6 +61,12 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .title {
   font-weight: 700;
@@ -477,7 +483,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -539,7 +545,7 @@ img {
 .features__item {
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features__item {
     width: 354px;
   }
@@ -569,7 +575,7 @@ img {
 .promo {
   padding-top: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .promo {
     display: none;
   }
@@ -679,7 +685,7 @@ img {
 
 .footer {
   background-color: #2F303A;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .footer__container {
@@ -700,8 +706,12 @@ img {
   }
 }
 .footer__contacts {
-  margin-bottom: 60px;
   flex-grow: 2;
+}
+@media screen and (max-width: 1199px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer__form {
@@ -823,6 +833,14 @@ img {
   position: relative;
   overflow: hidden;
 }
+.pic__thumb .picture {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .pic__inner {
   position: absolute;
   top: 0;
@@ -839,10 +857,6 @@ img {
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
-}
-
-.picture {
-  width: 450px;
 }
 
 .backdrop {
@@ -872,7 +886,7 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -881,12 +895,12 @@ img {
     width: 450px;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .modal {
     top: 40vw;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     top: 50%;

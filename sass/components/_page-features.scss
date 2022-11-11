@@ -7,10 +7,10 @@
 &__item {
     text-align: center;
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @include min-tablet {
         width: 354px;
     }
-    @media screen and (min-width:1200px) {
+    @include min-desktop {
         width: 270px;
     }
 }

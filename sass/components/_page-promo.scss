@@ -1,6 +1,6 @@
 
 .promo {
-    @media screen and (max-width:767px) {
+    @include max-desktop {
         display: none;
         
     }

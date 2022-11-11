@@ -7,7 +7,7 @@
     }
 
     &__link {
-        @media screen and (max-width:1199px) {
+        @include max-desktop {
             width: 210px;
         }
         transition: border-color $time $speed;

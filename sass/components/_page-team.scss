@@ -1,7 +1,7 @@
 .team {
     background-color: #F5F4FA;
     &__list {
-        
+    
     }
     &__item {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -12,13 +12,13 @@
         line-height: 1.2;
         font-size: 16px;
         background-color: $simpleColor;
-        @media screen and (max-width:767px) {
+        @include max-tablet {
             max-width: 450px;
         }
-        @media screen and (min-width:768px) {
+        @include min-tablet {
             width: 354px;
         }
-        @media screen and (min-width:1200px) {
+        @include min-desktop {
             width: 270px;
         }
     }

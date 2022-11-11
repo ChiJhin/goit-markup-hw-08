@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 
     @include retina {
@@ -13,7 +13,7 @@
         }
     }
 
-    @media screen and (max-width:1199px) {
+    @include max-desktop {
         max-width: 768px;
         background-image: $gradient, url(../images/hero/hero-tab.jpg);
         @include retina {
@@ -23,7 +23,7 @@
         }
     }
 
-    @media screen and (max-width:767px) {
+    @include max-tablet {
         max-width: 480px;
         width: 100%;
         background-image: $gradient, url(../images/hero/hero-mob.jpg);
@@ -54,7 +54,7 @@
         text-transform: uppercase;
         margin-bottom: 30px;
 
-        @media screen and (max-width:1199px) {
+        @include max-desktop {
             max-width: 360px;
             line-height:1.61;
             font-size: 26px;

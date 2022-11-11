@@ -12,7 +12,7 @@
         display: block;
         color: $simpleColor;
         margin-bottom: 20px;
-        @media screen and (max-width:1199px) {
+        @include max-desktop {
             text-align: center;
         }
         

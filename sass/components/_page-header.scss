@@ -4,7 +4,7 @@
     
     align-items: center;
     display: flex;
-    @media screen and (max-width:767px) {
+    @include max-tablet {
         height: 60px;
     }
 
@@ -19,7 +19,7 @@
         
     
     
-    @media screen and (min-width:1200px) {
+    @include min-desktop {
         gap: 93px;
     }
     
@@ -33,14 +33,14 @@
     align-items: center;
     justify-content: end;
 
-    @media screen and (min-width:768px) {
+    @include min-tablet {
         justify-content: center;
         width: 100%;
     }
 
    
     &__container {
-        @media screen and (max-width:767px) {
+        @include max-tablet {
             display: none; 
         }
 
@@ -62,7 +62,7 @@
             z-index: 5;
             background-color: $simpleColor;
 
-            @media screen and (min-width:480px) {
+            @include min-mobile {
                 left: 50%;
                 transform: translateX(-50%);
                 width: 480px;
@@ -95,20 +95,20 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
-        @media screen and (min-width:768px) {
+        @include min-tablet {
             display: none;
         }
     
     }
 
     &__list {
-        @media screen and (min-width:1200px) {
+        @include min-desktop {
             display: flex;
             flex-direction: row;
             align-items: center;
         }
         
-        @media screen and (min-width:768px) and (max-width:1199px) {
+        @include min-max-desktop {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -117,14 +117,14 @@
     }
 
     &__item {
-        @media screen and (max-width:767px) {
+        @include max-tablet {
             margin-bottom: 32px;
         }
         &:first-child {
-            @media screen and (max-width:1199px) {
+            @include max-desktop {
                 margin-bottom: 10px;
             }
-            @media screen and (min-width:1200px) {
+            @include min-desktop {
                 margin-right: 30px;
             }
         }
@@ -150,26 +150,26 @@
                 fill:currentColor;
             }
 
-        @media screen and (max-width:767px) {
+            @include max-tablet {
             font-size: 24px;
         &--current {
             font-size: 34px;
             color: $accentColor;
             }
         }
-        @media screen and (max-width:1199px) {
+        @include max-desktop {
             display: flex;
             align-items: center;
             transition: color $time $speed;
         }
-        @media screen and (min-width:1200px) {
+        @include min-desktop {
             display:flex;
             justify-content: baseline;
         }
     }
 
     &__icon {
-        @media screen and (max-width:767px) {
+        @include max-tablet {
             display: none;
         }
         transition: fill $time $speed;
@@ -183,14 +183,14 @@
         flex-grow: 2;
         
     &__list {
-        @media screen and (min-width:768px) {
+        @include min-tablet {
             display:flex ;
             }
     
     }
 
     &__item {
-        @media screen and (max-width:767px) {
+        @include max-tablet {
         margin-bottom: 32px;
         }
     
@@ -201,7 +201,7 @@
     }
     &__link {
         display: block;
-        @media screen and (min-width:768px) {
+        @include min-tablet {
         padding: 30px 0;
         }
         transition: color $time $speed;
@@ -210,7 +210,7 @@
                 color: $accentColor;
             }
 
-        @media screen and (max-width:767px) {
+            @include max-tablet {
             font-family: 'Roboto';
             font-weight: 500;
             font-size: 40px;
@@ -223,7 +223,7 @@
 
         &--current {
             color: $accentColor;
-            @media screen and (min-width:768px) {
+            @include min-tablet {
 
                 position: relative;
                 transition: color $time $speed;
@@ -261,7 +261,7 @@
     &__link {
         color: $accentColor;
     }
-    @media screen and (min-width:768px) {
+    @include min-tablet {
         display: none;
     }
 }
