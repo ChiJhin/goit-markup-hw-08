@@ -75,10 +75,15 @@ img {
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .title {
     font-size: 28px;
     line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
   }
 }
 
@@ -358,6 +363,7 @@ img {
 .menu__link {
   font-size: 12px;
   line-height: 1.2;
+  display: flex;
   color: #757575;
 }
 .menu__link:hover, .menu__link:focus {
@@ -377,15 +383,14 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .menu__link {
-    display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 1200px) {
   .menu__link {
-    display: flex;
-    justify-content: baseline;
+    font-size: 14px;
+    align-items: center;
   }
 }
 .menu__icon {
@@ -518,6 +523,12 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .hero__title {
   text-align: center;
   color: #ffffff;
@@ -542,8 +553,10 @@ img {
   padding: 10px 24px;
 }
 
-.features__item {
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .features__item {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -879,25 +892,29 @@ img {
   pointer-events: none;
   opacity: 0;
 }
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
 
 .modal {
   position: relative;
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
+    transform: translate(-50%, -50%) scale(1);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    top: 40vw;
+    top: 50vh;
   }
 }
 @media screen and (min-width: 1200px) {

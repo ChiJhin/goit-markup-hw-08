@@ -36,10 +36,12 @@
     }
    
     &__container {
-
         padding-top: 118px;
         padding-bottom: 118px;
-
+        @include min-desktop {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
     }
 
     &__title {

@@ -5,7 +5,9 @@
     }
 
 &__item {
-    text-align: center;
+    @include max-tablet {
+        text-align: center;
+    }
 
     @include min-tablet {
         width: 354px;
